@@ -1,0 +1,133 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #0d1a2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #15273f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: "Outfit", sans-serif;
+}
+
+.image-container {
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.image-container .card-image {
+    height: 100%;
+    width: 100%;
+}
+
+.icon-view-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: #28d9df88;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.icon-view-container:hover {
+    opacity: 1;
+}
+
+
+.title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.subtitle {
+    color: #8ea3c0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency {
+    color: #28dadf;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.time {
+    color: #8ea3c0;
+    font-size: 12px;
+}
+
+.time,
+.currency {
+    display: flex;
+    align-items: center;
+}
+
+.currency-text {
+    margin-left: 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.by {
+    margin-left: 10px;
+    color: #8ea3c0;
+}
+
+.name {
+    margin-left: 5px;
+    color: #fff;
+}
+
+.title:hover,
+.name:hover {
+    cursor: pointer;
+    color: #28dadf;
+}
